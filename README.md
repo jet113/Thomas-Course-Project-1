@@ -16,7 +16,7 @@ NOTE: It may take a few minutes for everything to install. If you go to localhos
 
 6. From there, simply click on the name of whatever application you'd like to launch.
 
-NOTE: If any application asks you for a password, the password = password
+NOTE: For PySpark, enter spark-shell in the terminal. If any application asks you for a password, the password = password
 
 7. To stop the container, enter control + C in the terminal to exit all containers.
 
