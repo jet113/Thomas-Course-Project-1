@@ -12,6 +12,8 @@ It may take a few minutes for everything to install.
 
 Then go to your web-browser (I use Google Chrome) and go to http://localhost:5000 
 
+To stop the container, enter control + C in the terminal to exit all containers.
+
 
 From there, simply click on the name of whatever application you'd like to launch.
 
