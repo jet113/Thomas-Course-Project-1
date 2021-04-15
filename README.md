@@ -25,5 +25,7 @@ Code Walkthrough Video: https://pitt-my.sharepoint.com/:v:/g/personal/jet113_pit
 
 Application Demo Video: https://pitt-my.sharepoint.com/:v:/g/personal/jet113_pitt_edu/ESIsL1SjJjlChRJS9czvYHoBuJgnssvc7y8qoukEX5PEyA?e=l18cAL
 
+NOTE: Pitt may require you to be signed into your pitt account to access the videos. I have them set to anyone with a link can access, but had issues using my non pitt OneDrive account.
+
 (Apologies for my loud Macbook fans in the video background)
 
