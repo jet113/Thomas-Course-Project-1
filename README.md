@@ -3,10 +3,15 @@
 Welcome to my Docker Microservice Hub!
 
 To run, pull the github repository to your computer using the terminal.
+
 Then cd into the repository. 
+
 Then run **docker-compose up**
+
 It may take a few minutes for everything to install. 
+
 Then go to your web-browser (I use Google Chrome) and go to http://localhost:5000 
+
 
 From there, simply click on the name of whatever application you'd like to launch.
 
