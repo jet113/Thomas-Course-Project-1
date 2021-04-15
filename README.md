@@ -2,7 +2,7 @@
  
 Welcome to my Docker Microservice Hub!
 
-To start, enter **git clone https://github.com/jet113/Thomas-Course-Project-1** in your terminal to clone the repository to your computer.
+To start, enter **git clone https://github.com/jet113/Thomas-Course-Project-1** in your terminal to clone the repository to your computer. (The repo can be pulled in other ways as well)
 
 Then cd into the repository. 
 
