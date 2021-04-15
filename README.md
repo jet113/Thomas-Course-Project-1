@@ -2,7 +2,7 @@
  
 Welcome to my Docker Microservice Hub!
 
-To run, pull the github repository to your computer using the terminal.
+To start, enter **git clone https://github.com/jet113/Thomas-Course-Project-1** in your terminal to clone the repository to your computer.
 
 Then cd into the repository. 
 
