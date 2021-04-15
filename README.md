@@ -16,5 +16,8 @@ Then go to your web-browser (I use Google Chrome) and go to http://localhost:500
 From there, simply click on the name of whatever application you'd like to launch.
 
 Code Walkthrough Video: https://pitt-my.sharepoint.com/:v:/g/personal/jet113_pitt_edu/ERsin5PWYZ5DvHtoR_5GpRoBtoaMwFMP4TP5ktlNBLCNoQ?e=HR2Lp2
+
 Application Demo Video: https://pitt-my.sharepoint.com/:v:/g/personal/jet113_pitt_edu/ESIsL1SjJjlChRJS9czvYHoBuJgnssvc7y8qoukEX5PEyA?e=l18cAL
+
+(Apologies for my loud Macbook fans in the video background)
 
