@@ -10,7 +10,7 @@ Welcome to my Docker Microservice Hub!
 
 4. run **docker-compose up**
 
-NOTE: It may take a few minutes for everything to install. If you go to localhost:5000 and nothing is visible OR the links aren't working, then docker-compose isn't finished setting up yet.
+NOTE: It may take a few minutes for everything to install. If you go to localhost:5000 and nothing is visible OR the links aren't working, then docker-compose isn't finished setting up yet. The terminal should display: **orange tail: cannot open 'anything' for reading: No such file or directory** when everything has fully loaded.
 
 5. Go to your web-browser (I use Google Chrome) and go to http://localhost:5000 
 
