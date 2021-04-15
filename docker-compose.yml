@@ -1,0 +1,87 @@
+version: '3'
+services:
+  app:
+    container_name: main-gui
+    build: .
+    volumes:
+      - .:/code
+      - ./:/srv/api/
+      - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+      FLASK_APP: app.py
+    command: ["flask", "run", "--host=0.0.0.0"]
+    ports:
+      - 5000:5000
+  rstudio:
+    image: "rocker/rstudio"
+    container_name: rstudio
+    ports:
+      - "8787:8787"
+    environment:
+      - DISABLE_AUTH=true
+  spyder:
+    image: ubuntu
+    container_name: spyder
+    command: bash -c "apt-get update && dpkg --configure -a && apt-get install ffmpeg libsm6 libxext6 spyder -y && tail -F anything"
+    environment:
+      - DISABLE_AUTH=true
+      - DISPLAY=192.168.1.153:0.0
+  orange:
+    image: ubuntu
+    container_name: orange
+    command: bash -c "apt-get update && dpkg --configure -a && apt-get install -y virtualenv build-essential python3-dev python3-pip libsm6 libxext6 ffmpeg libfontconfig1 libxrender1 libgl1-mesa-glx libglib2.0-0 && virtualenv --python=python3 --system-site-packages orange3venv && source orange3venv/bin/activate && pip3 install opencv-python orange3 && tail -F anything"
+    environment:
+      - DISABLE_AUTH=true
+      - DISPLAY=192.168.1.153:0.0
+      - DEBIAN_FRONTEND=noninteractive
+    tty: true
+    stdin_open: true
+  git:
+    image: bitnami/git
+    container_name: git
+    command: bash -c "apt-get update -y && apt-get install xterm -y && tail -F anything"
+    environment:
+      - DISPLAY=192.168.1.153:0.0
+    tty: true
+    stdin_open: true
+  jupyter:
+    image: "jupyterhub/jupyterhub"
+    container_name: jupyter
+    ports:
+      - "8000:8000"
+    environment:
+      - DISABLE_AUTH=true
+  vs-code:
+    image: jefferyb/code-server
+    container_name: vs-code
+    ports:
+      - 9000:9000
+    volumes:
+      - ${PWD}:/home/coder/project
+    environment:
+      - CODER_PASSWORD=password
+      - DISABLE_AUTH=true
+  hadoop:
+    image: gelog/hadoop
+    container_name: hadoop
+    command: bash -c "apt-get update -y && apt-get install xterm -y && tail -F anything"
+    environment:
+      - DISPLAY=192.168.1.153:0.0
+    tty: true
+    stdin_open: true
+  pyspark:
+    image: masroorhasan/pyspark
+    container_name: pyspark
+    command: bash -c "apt-get update -y && apt-get install xterm -y && tail -F anything"
+    environment:
+      - DISPLAY=192.168.1.153:0.0
+    tty: true
+    stdin_open: true
+  tensorflow:
+    image: tensorflow/tensorflow
+    container_name: tensorflow
+    command: bash -c "apt-get update -y && apt-get install xterm -y && tail -F anything"
+    environment:
+      - DISPLAY=192.168.1.153:0.0
+    stdin_open: True
+    tty: True
