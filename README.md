@@ -2,19 +2,23 @@
  
 Welcome to my Docker Microservice Hub!
 
-To start, enter **git clone https://github.com/jet113/Thomas-Course-Project-1** in your terminal to clone the repository to your computer. (The repo can be pulled in other ways as well)
+1. Enter **git clone https://github.com/jet113/Thomas-Course-Project-1** in your terminal to clone the repository to your computer. (The repo can be pulled in other ways as well)
 
-Then cd into the repository. 
+2. Cd into the repository. 
 
-Then run **docker-compose up**
+3. Open the docker-compose.yml file and change any DISPLAY enviornment variables to equal your local IP address.
 
-It may take a few minutes for everything to install. 
+4. run **docker-compose up**
 
-Then go to your web-browser (I use Google Chrome) and go to http://localhost:5000 
+NOTE: It may take a few minutes for everything to install. 
 
-From there, simply click on the name of whatever application you'd like to launch.
+5. Go to your web-browser (I use Google Chrome) and go to http://localhost:5000 
 
-To stop the container, enter control + C in the terminal to exit all containers.
+6. From there, simply click on the name of whatever application you'd like to launch.
+
+NOTE: If any application asks you for a password, the password = password.
+
+7. To stop the container, enter control + C in the terminal to exit all containers.
 
 
 Code Walkthrough Video: https://pitt-my.sharepoint.com/:v:/g/personal/jet113_pitt_edu/ERsin5PWYZ5DvHtoR_5GpRoBtoaMwFMP4TP5ktlNBLCNoQ?e=HR2Lp2
